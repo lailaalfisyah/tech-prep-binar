@@ -1,0 +1,29 @@
+PERTANYAAN
+
+1. Disebutkan seorang client membutuhkan layanan aplikasi antar makanan. Dan Anda
+diminta untuk membuat desain sistem dengan kriteria pelanggan hanya dilayani
+dengan mobile apps. Desainlah stack backend dan micro service layanan tersebut beserta
+tools dan alasan mengapa memilih design dan tools tersebut!
+
+2. Bagaimana menangani keamanan dalam pengiriman data (backend dan mobile apps) pada
+sistem diatas. Jelaskan solusi tersebut beserta alasannya!
+
+
+
+JAWABAN
+
+1. Framework yang digunakan adalah React Native karena developer hanya perlu membuat
+satu buah kode untuk membuat mobile app dengan berbagai sistem operasi, seperti iOS
+dan Android. Hal ini dapat menghemat waktu dan juga biaya. Selain itu, micro service
+akan terdiri dari:
+  - Authentication dan authorization
+  - Layanan pencarian menu makanan dan lokasi penjualnya
+  - Penanganan proses pembelian dan pembayaran
+  - Mesin pelacak posisi pengantar makanan
+
+2. Untuk dapat mengakses sistem, pengguna harus melalui proses login terlebih dahulu
+sebagai syarat lolos authentication dan authorization. Ketika pengguna telah login,
+maka ia akan mendapatkan sebuah token unik yang berfungsi sebagai kunci untuk membuka
+akses pada sistem tersebut. Token yang didapatkan oleh pengguna akan berganti dengan
+token yang baru selama beberapa waktu yang telah ditentukan supaya apabila token tersebut
+dicuri, maka datanya hanya akan bisa digunakan sementara saja.
