@@ -12,4 +12,5 @@ Create new user account to database with `name`, `email`, and `password` in requ
 
 ### Login
 
-`POST`
+`POST` [http://localhost:5000/api/auth/login](http://localhost:5000/api/auth/login)\
+Match the `email` and `password` you have with the one in the database to give you access to the system.
