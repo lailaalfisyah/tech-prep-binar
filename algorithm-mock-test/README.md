@@ -1,0 +1,1 @@
+Algorithm mock test from HackerRank.
