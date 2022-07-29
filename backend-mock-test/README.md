@@ -5,7 +5,11 @@ You can test the API in Postman.
 
 ## API for Authentication
 
-### Register User Account
+### `Register`
 
-POST [http://localhost:5000/api/auth/signup](http://localhost:5000/api/auth/signup)\
-Create new account to database with "name", "email", and "password" in request body.
+`POST` [http://localhost:5000/api/auth/signup](http://localhost:5000/api/auth/signup)\
+Create new user account to database with "name", "email", and "password" in request body.
+
+### `Login`
+
+`POST`
