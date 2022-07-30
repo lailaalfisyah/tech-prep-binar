@@ -1,10 +1,10 @@
 const { Users } = require('../models')
 
 function format(user) {
-  const { id, username } = user;
+  const { id, email } = user;
   return {
     id,
-    username,
+    email,
     accessToken: user.generateToken(),
   };
 }
@@ -17,6 +17,6 @@ module.exports = {
 
   login: (req, res) => {
     Users.authenticate(req.body)
-      .then(() => res.status(200).json(format(user)))
+      .then(data => res.status(200).json(format(data)))
   }
 }

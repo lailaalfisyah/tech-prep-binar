@@ -7,6 +7,6 @@ router.get('/products', restrict, crud1.getProducts)
 router.get('/products/:id', restrict, crud1.getProduct)
 router.post('/products', restrict, crud1.postProduct)
 router.put('/products/:id', restrict, crud1.putProduct)
-router.delete('products/:id', restrict, crud1.deleteProduct)
+router.delete('/products/:id', restrict, crud1.deleteProduct)
 
 module.exports = router;

@@ -14,7 +14,7 @@ module.exports = {
       price: {
         type: Sequelize.INTEGER(8)
       },
-      imagerurl: {
+      imageurl: {
         type: Sequelize.STRING
       },
       createdAt: {

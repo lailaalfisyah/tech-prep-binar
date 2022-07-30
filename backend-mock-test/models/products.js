@@ -12,19 +12,19 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
 
-    static inputProduct = ({ name, price, imagerurl }) => {
+    static inputProduct = ({ name, price, imageurl }) => {
       return this.create({
         name,
         price,
-        imagerurl
+        imageurl
       })
     }
 
-    static editProduct = (id, { name, price, imagerurl }) => {
+    static editProduct = (id, { name, price, imageurl }) => {
       return this.update({
         name,
         price,
-        imagerurl
+        imageurl
       }, {
         where: {
           id
@@ -36,7 +36,7 @@ module.exports = (sequelize, DataTypes) => {
   Products.init({
     name: DataTypes.STRING(50),
     price: DataTypes.INTEGER(8),
-    imagerurl: DataTypes.STRING
+    imageurl: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Products',
