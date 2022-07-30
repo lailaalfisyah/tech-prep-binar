@@ -3,6 +3,10 @@
 Runs the app in the development mode.\
 You can test the API in Postman.
 
+Before run the app, run the database server first.\
+You can use XAMPP as one of MySQL DBMS.\
+Then create a database on your local computer and adjust it in `config/config.json`.
+
 ## API for Authentication
 
 ### Register
